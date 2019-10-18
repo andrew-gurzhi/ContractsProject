@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contract</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <a class="navbar-brand text-secondary" href="#">Create Contract</a>
+    <<ul class="nav navbar-nav navbar-right">
+    <li><a href="/login/google/drive">Авторизация Google Drive</a></li>
+</ul>
+</nav>
+<div class="conteiner-fluid">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 hidden-xs-down bg-light sidebar">
+            <ul class="nav nav-stacked flex-column bg-light">
+                <li class = "nav-item">
+                    <a class="nav-link bg-primary  text-white" href="/contract/java/">JAVA</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link bg-primary  text-white" href="/contract/web/">WEB</a>
+                </li>
+
+            </ul>
+        </nav>
+<!--        <main class = "col-sm-9  offset-sm-3 col-md-10 offset-md-2 pt-3 bg-light" >-->
+<!--            <h1>Страница для создания ссылки</h1>-->
+<!--            <div class="modal-header">-->
+<!--                <div class="col-sm">-->
+<!--                    <h4 class="col-sm-11">Ссылка на форму для договора:</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <div class="container-fluid">-->
+<!--                    <div class="form-group">-->
+<!--                        <div class="row" style="margin-bottom: 5%">-->
+<!--                            <div class="form-check col-sm-3">-->
+<!--                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1"-->
+<!--                                       id="contract-client-setting-one-time-payment-radio" checked="checked" />-->
+<!--                                <label class="form-check-label" for="contract-client-setting-one-time-payment-radio">-->
+<!--                                    разовая-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="form-check col-sm-3">-->
+<!--                                <input class="form-check-input" type="radio" name="exampleRadios" value="option2"-->
+<!--                                       id="contract-client-setting-month-payment-radio" />-->
+<!--                                <label class="form-check-label" for="contract-client-setting-month-payment-radio">-->
+<!--                                    месячная-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--&lt;!&ndash;                            <div class="form-check col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input class="form-check-input" type="checkbox" id="contract-client-setting-diploma-checkbox"&ndash;&gt;-->
+<!--&lt;!&ndash;                                       hidden="hidden" />&ndash;&gt;-->
+<!--&lt;!&ndash;                                <label class="form-check-label" for="contract-client-setting-diploma-checkbox" style="font-weight: 700;" >диплом</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="form-check col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input class="form-check-input" type="checkbox" id="contract-client-setting-stamp-checkbox"&ndash;&gt;-->
+<!--&lt;!&ndash;                                       hidden="hidden" />&ndash;&gt;-->
+<!--&lt;!&ndash;                                <label class="form-check-label" for="contract-client-setting-stamp-checkbox" style="font-weight: 700;" >подписать</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="row" style="margin-bottom: 5%">-->
+<!--                            <div class="form-check col-sm-3">-->
+<!--                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1"-->
+<!--                                       id="contract-client-java-radio" checked="checked" />-->
+<!--                                <label class="form-check-label" for="contract-client-setting-one-time-payment-radio">-->
+<!--                                    JAVA-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="form-check col-sm-3">-->
+<!--                                <input class="form-check-input" type="radio" name="exampleRadios" value="option2"-->
+<!--                                       id="contract-client-web-radio" />-->
+<!--                                <label class="form-check-label" for="contract-client-setting-month-payment-radio">-->
+<!--                                    WEB-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <label for="contract-client-setting-payment-amount-form" class="col-sm-2 col-form-label">Сумма платежа</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <input type="text" class="form-control" id="contract-client-setting-payment-amount-form"/>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <div class="container-fluid">-->
+<!--                    <div class="row">-->
+<!--                        <button class="btn btn-primary col-sm-4" type="button" id="contract-client-setting-generate-contract-button"-->
+<!--                                onclick="createContractSetting()" >Сгенерировать ссылку</button>-->
+<!--                        <div class="col-sm-8">-->
+<!--                            <input class="form-control" type="text" id="contract-client-setting-contract-link"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </main>-->
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/js/main-modal-contract.js}"></script>
+</body>
+</html>
